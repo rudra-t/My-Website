@@ -8,8 +8,8 @@ function Card() {
           <div className="row">
             <div class="col-lg-4 col-md-6">
               <div className="card-head">
-                <p className="subtitle">For All your Computer Need.</p>
-                <h1 className="title">Some projects i Completed in past</h1>
+                <p className="subtitle">My Resent Projects.</p>
+                <h1 className="title">My Woek</h1>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">

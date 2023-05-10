@@ -10,11 +10,16 @@ function About() {
           </div>
           <div className="about-text col-md-6">
             <h2>About Me</h2>
-            <h1 className="my-3">Hello I m Rudra Tiwari</h1>
-            <h2>Founder Of Raght info solution </h2>
+            <h1 className="my-3">Turning Vision Into Reality </h1>
+            <h2>Web doveloper from India</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
-              totam consequuntur dolorem illo velit blanditiis,
+              As a web developer with one year of experience and a background in
+              sales, I bring a unique combination of skills to the table. My
+              experience in sales has honed my communication and interpersonal
+              skills, allowing me to work effectively with clients and
+              understand their needs. I am highly focused on customer
+              satisfaction and strive to build long-lasting relationships with
+              clients.
             </p>
           </div>
         </div>

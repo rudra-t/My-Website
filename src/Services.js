@@ -13,10 +13,10 @@ function Card() {
               <div className="card">
                 <i className="fas fa-code"></i>
                 <div className="card-body">
-                  <h2 classsName="card-title">Web Dovelopment</h2>
+                  <h2 classsName="card-title">Human Resource</h2>
                   <p classsName="card-sub-title">
-                    Want a website for personal or for your business i can help
-                    you as your requirment
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati, ut?
                   </p>
                 </div>
               </div>
@@ -25,9 +25,10 @@ function Card() {
               <div className="card">
                 <i className="fas fa-code"></i>
                 <div className="card-body">
-                  <h2 classsName="card-title">Sales Executive</h2>
+                  <h2 classsName="card-title">Human Resource</h2>
                   <p classsName="card-sub-title">
-                    I can help you to buy laptop from lenovo .
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati, ut?
                   </p>
                 </div>
               </div>
@@ -36,7 +37,7 @@ function Card() {
               <div className="card">
                 <i className="fas fa-code"></i>
                 <div className="card-body">
-                  <h2 classsName="card-title">Accountency</h2>
+                  <h2 classsName="card-title">Human Resource</h2>
                   <p classsName="card-sub-title">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Obcaecati, ut?

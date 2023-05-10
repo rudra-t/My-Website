@@ -11,10 +11,14 @@ function Home() {
                 <h1>
                   <span>Hare Krishna</span>
                 </h1>
-                <h2>Turning Vision Into Reality</h2>
-                <p className="mt-2">
-                  Everyone wants quality but not get so we are here with our
-                  premium quality in least time at your doorstep.
+                <h2>Hello I m Rudra Tiwari</h2>
+                <p>
+                  A jounier Front End Doveloper and full time Sales executive in
+                  LENOVO. I have experience with front-end development languages
+                  such as HTML, CSS, and JavaScript.My experience as a
+                  salesperson has given me an understanding of how businesses
+                  operate and how to tailor solutions to meet their specific
+                  needs
                 </p>
                 <a className="btn" href="#Services">
                   My services
