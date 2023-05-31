@@ -4,7 +4,7 @@ function Navbar() {
     <>
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
-          <a className="navbar-brand fs-3" href="#">
+          <a className="navbar-brand" href="#">
             Rudra
           </a>
           <button

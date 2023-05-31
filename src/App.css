@@ -6,15 +6,12 @@
     text-decoration: None;
 }
 :root{
-    --bgcolor: #1D1F21;
-    --second-bg-color: #444648;
-    --text: #fff;
-    --main: #FF6600;
-    --third-bg-color:#929292;
+    --bgcolor: #eef1f6;
+    --second-bg-color: #d3e1e2;
+    --text: #929292;
+    --main: #407c87;
+    --second-text-color:#fff;
   }
-body{
-    background-color: var(--bgcolor);
-}
 /*:root{
     --bgcolor: #396AA5;
     --second-bg-color:#182A40;
@@ -28,26 +25,21 @@ body{
     --second-bg:#bdbdbd;
 }*/
 /*----Navbar start-----*/
-nav .container{
-    background-color: var(--second-bg-color);
-    border-radius: 10px;
-}
 .navbar-brand{
-    color: var(--text);
+    color: var(--main);
+
 }
 .navbar-toggler-icon{
-    color: var(--text);
+    color: var(--main);
     padding: 5px;
 }
 .nav-link{
-    color: var(--text);
+    color: var(--main);
     text-align: center;
     padding: 12px 0;
 }
 .nav-link:hover{
-    background-color: var(--bgcolor);
-    border-radius: 10px;
-    color: var(--text);
+    color: var(--main);
 }
 /*----Navbar end-----*/
 /*---------------------------------Home-------------------------------------------*/
@@ -57,31 +49,42 @@ nav .container{
     justify-content: center;
 }
 .home-text h1{
-    font-size: 6.5rem;
+    font-size: 2.5rem;
     color: var(--main);
-    font-weight: bolder;
 }
 .home-text h2{
-    color: var(--text);
-    font-size: 4rem;
+    color: var(--main);
+    font-size: 3rem;
     padding: 10px 0;
+    font-weight: bold;
 }
 .home-text p{
     color: var(--text);
-    line-height: 30px;
+    line-height: 33px;
+    margin-right: 100px;
 }
 .home-img img{
     min-width: 100%;
 }
-.btn{
+#Home .btn{
     background-color: var(--main);
-    color: var(--White);
+	color: var(--second-text-color);
+	border: 1px solid transparent;
+	border-radius: 10px;
+}
+#Home .btn:hover{
+    background-color: var(--bgcolor);
+	color: var(--main);
+	border: 1px solid var(--main);
 }
 @media screen and (max-width: 1200px) {
     .home-text h1 {
       font-size: 6rem;}
     .home-text h2 {
         font-size: 2.5rem;
+      }
+      .home-text p{
+        margin-right: 0;
       }
   }
   @media screen and (max-width: 992px) {
@@ -91,13 +94,19 @@ nav .container{
     .home-text h2 {
         font-size: 2rem;
       }
+      .home-text p{
+        margin-right: 0;
+      }
   }
 @media screen and (max-width: 480px) {
     .home-text h1 {
-      font-size: 6rem;
+      font-size: 4.2rem;
     }
     .home-text h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+      }
+      .home-text p{
+        margin-right: 0;
       }
   }
 /*----------------------------Home end----------------------------------------*/
@@ -109,16 +118,15 @@ nav .container{
     justify-content: center;
 }
 .about-text h1{
-    color: var(--main);
-    font-size: 5rem;
+    color: var(--second-bg-color);
+    font-size: 3rem;
     font-weight: bold;
 }
 .about-text h2{
-    color: var(--text);
-    font-size: 2.5rem;
-    margin: 30px 0;
+    color: var(--main);
+    font-size: 2.2rem;
+    margin: 20px 0;
     font-weight: bold;
-    border-bottom: 10px solid var(--bgcolor);
 }
 .about-text p{
     color: var(--text);
@@ -164,13 +172,16 @@ nav .container{
   }
 /*----About end-----*/
 /*----Services-----*/
+#Services{
+    background-color: var(--bgcolor);
+}
 #Services .row{
     min-height: 100vh;
     align-items: center;
     justify-content: center;
 }
 #Services h1{
-    color: var(--text);
+    color: var(--main);
     text-align: center;
     font-size: 4rem;
     font-weight: bold;
@@ -180,20 +191,21 @@ nav .container{
     color: var(--main);
 }
 #Services .card{
-    background-color: var(--second-bg-color);
+    background-color: var(--third-bg-color);
     border-radius: 10px;
-    color: var(--text);
+    color: var(--main);
     overflow: hidden;
     text-align: center; 
-    height: 20rem;
-    padding: 5px 0;
 }
 .fas{
     font-size: 3rem;
     padding: 1rem;
+    color: var(--text);
 }
 #Services .card:hover{
     transition-duration: .5s;
+    background-color: var(--main);
+    color: var(--bgcolor);
 }
 @media screen and (max-width: 992px) {
     #Services h1{
@@ -281,9 +293,6 @@ nav .container{
   /*----Team end-----*/
 /*----Testimonials end-----*/
 /*----Services-----*/
-#Portfolio{
-    background-color: var(--bgcolor);
-}
 #Portfolio .row{
     min-height: 100vh;
     padding-top: 10rem;
@@ -291,7 +300,6 @@ nav .container{
 #Portfolio .card-head{
     padding: 10px;
     color: var(--main);
-    height: 13rem;
 }
 #Portfolio .title{
     font-size: 5rem;
@@ -348,9 +356,11 @@ nav .container{
     text-align: center;
     color: var(--main);
     margin: 5rem 0 0 0;
+    background-color: var(--main);
+    color: var(--second-text-color);
 }
 .qute{
-    background-color: var(--main);
+    background-color: var(--second-bg-color);
     color: var(--text);
     border-radius: 25px;
     margin-bottom: 5rem;
@@ -358,6 +368,7 @@ nav .container{
 .qute h1{
     font-size: 3rem;
     font-weight: bold;
+    color: var(--main);
 }
 .social-links i{
     margin: 1rem 1.2rem;

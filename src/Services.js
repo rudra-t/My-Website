@@ -13,11 +13,17 @@ function Card() {
               <div className="card">
                 <i className="fas fa-code"></i>
                 <div className="card-body">
-                  <h2 classsName="card-title">Human Resource</h2>
+                  <h2 classsName="card-title"> Lenovo Sales Executive</h2>
                   <p classsName="card-sub-title">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Obcaecati, ut?
+                    If you ever need any advice or recommendations on laptops,
+                    feel free to ask. I'm here to assist you.".
                   </p>
+                  <a
+                    href="https://store.lenovo.com/in/en/marketplace/seller/profile/shop/1658478463"
+                    className="btn"
+                  >
+                    Website
+                  </a>
                 </div>
               </div>
             </div>
@@ -25,22 +31,11 @@ function Card() {
               <div className="card">
                 <i className="fas fa-code"></i>
                 <div className="card-body">
-                  <h2 classsName="card-title">Human Resource</h2>
+                  <h2 classsName="card-title">Web Doveloper</h2>
                   <p classsName="card-sub-title">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Obcaecati, ut?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 col-lg-4 p-3">
-              <div className="card">
-                <i className="fas fa-code"></i>
-                <div className="card-body">
-                  <h2 classsName="card-title">Human Resource</h2>
-                  <p classsName="card-sub-title">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Obcaecati, ut?
+                    If you ever need assistance with website development or have
+                    questions about optimizing your online presence, feel free
+                    to ask. I'm here to help.
                   </p>
                 </div>
               </div>
