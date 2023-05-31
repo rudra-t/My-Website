@@ -191,7 +191,7 @@
     color: var(--main);
 }
 #Services .card{
-    background-color: var(--third-bg-color);
+    background-color: var(--second-text-color);
     border-radius: 10px;
     color: var(--main);
     overflow: hidden;
@@ -206,6 +206,14 @@
     transition-duration: .5s;
     background-color: var(--main);
     color: var(--bgcolor);
+}
+#Services .btn{
+    background-color: var(--main);
+    color: var(--second-text-color);
+}
+#Services .btn:hover{
+    background-color: var(--second-text-color);
+    color: var(--main);
 }
 @media screen and (max-width: 992px) {
     #Services h1{
@@ -308,7 +316,6 @@
     font-size: 2rem;
 }
 #Portfolio .card{
-    background-color: var(--third-bg-color);
     border-radius: 10px;
     height: 15rem;
     overflow: hidden;
@@ -333,13 +340,10 @@
     position: absolute;
     background-color: #1d1f2187;
     backdrop-filter: blur(5px);
-    color: var(--text);
     transition: .7s;
 }
-#Portfolio .card-text1 h5{
-    text-transform: capitalize;
-    font-size: 30px;
-    font-weight: 500;
+.card-text{
+    color: var(--second-text-color);
 }
 #Portfolio .card:hover .card-body{
     right: 0;
@@ -377,6 +381,10 @@
 .credit{
     font-size: 1.2rem;
 }
-
+#Contact .btn{
+    background-color: var(--main);
+    color: var(--second-text-color);
+    margin-top: 15px;
+}
 
 /*----footer end-----*/

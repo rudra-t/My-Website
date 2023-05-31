@@ -6,7 +6,7 @@ function Footer() {
         <div className="container qute">
           <div className="py-4">
             <h1 className="">Do you have any projects</h1>
-            <a href="mailto:rtiwari@gmail.com" className="btn btn-dark mt-3">
+            <a href="mailto:rtiwari@gmail.com" className="btn">
               I m interested
             </a>
           </div>

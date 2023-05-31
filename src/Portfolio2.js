@@ -9,7 +9,7 @@ function Card() {
             <div class="col-lg-4 col-md-6">
               <div className="card-head">
                 <p className="subtitle">My Resent Projects.</p>
-                <h1 className="title">My Woek</h1>
+                <h1 className="title">My Work</h1>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
