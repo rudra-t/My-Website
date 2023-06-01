@@ -19,7 +19,7 @@ function Card() {
                 </div>
                 <div className="card-body">
                   <div className="card-text">
-                    <h5 className="py-2">Lenovo Exclusive Store</h5>
+                    <h5>Lenovo Exclusive Store</h5>
                     <p>
                       get any type of servicing related to printer laptop or
                       computer.
@@ -35,7 +35,7 @@ function Card() {
                 </div>
                 <div className="card-body">
                   <div className="card-text">
-                    <h5 className="py-2">Lenovo Exclusive Store</h5>
+                    <h5>Lenovo Exclusive Store</h5>
                     <p>
                       get any type of servicing related to printer laptop or
                       computer.
@@ -51,7 +51,7 @@ function Card() {
                 </div>
                 <div className="card-body">
                   <div className="card-text">
-                    <h5 className="py-2">Lenovo Exclusive Store</h5>
+                    <h5>Lenovo Exclusive Store</h5>
                     <p>
                       get any type of servicing related to printer laptop or
                       computer.

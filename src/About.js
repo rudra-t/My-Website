@@ -10,7 +10,7 @@ function About() {
           </div>
           <div className="about-text col-md-6">
             <h2>About Me</h2>
-            <h1 className="my-3">Turning Vision Into Reality </h1>
+            <h1>Turning Vision Into Reality </h1>
             <h2>Web doveloper from India</h2>
             <p>
               As a web developer with one year of experience and a background in

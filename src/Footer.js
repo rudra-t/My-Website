@@ -3,14 +3,6 @@ function Footer() {
   return (
     <>
       <footer id="Contact">
-        <div className="container qute">
-          <div className="py-4">
-            <h1 className="">Do you have any projects</h1>
-            <a href="mailto:rtiwari@gmail.com" className="btn">
-              I m interested
-            </a>
-          </div>
-        </div>
         <h1>
           For <span>Contact</span>
         </h1>
@@ -28,6 +20,14 @@ function Footer() {
           </div>
         </div>
       </footer>
+      <div className="container qute">
+        <div className="py-4">
+          <h1 className="">Do you have any projects</h1>
+          <a href="mailto:rtiwari@gmail.com" className="qutebtn">
+            I m interested
+          </a>
+        </div>
+      </div>
     </>
   );
 }

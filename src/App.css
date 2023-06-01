@@ -41,6 +41,13 @@
 .nav-link:hover{
     color: var(--main);
 }
+@media screen and (max-width: 480px) {
+    .nav-link{
+        background-color: var(--main);
+        color: var(--second-text-color);
+        border-radius: 10px;
+    }
+}
 /*----Navbar end-----*/
 /*---------------------------------Home-------------------------------------------*/
 #Home .row{
@@ -55,7 +62,7 @@
 .home-text h2{
     color: var(--main);
     font-size: 3rem;
-    padding: 10px 0;
+    margin: 15px 0;
     font-weight: bold;
 }
 .home-text p{
@@ -100,10 +107,12 @@
   }
 @media screen and (max-width: 480px) {
     .home-text h1 {
-      font-size: 4.2rem;
+      font-size: 3.9rem;
+      text-align: center;
     }
     .home-text h2 {
         font-size: 2rem;
+        text-align: center;
       }
       .home-text p{
         margin-right: 0;
@@ -112,7 +121,7 @@
 /*----------------------------Home end----------------------------------------*/
 /*----------------------------About----------------------------------------*/
 #About .row{
-    min-height: 100vh;
+    min-height: auto;
     border-radius: 50px;
     align-items: center;
     justify-content: center;
@@ -164,7 +173,7 @@
   }
   @media screen and (max-width: 480px) {
     .about-text h1 {
-      font-size: 4rem;
+      font-size: 3rem;
     }
     .about-text h2 {
         font-size: 2.2rem;
@@ -172,9 +181,6 @@
   }
 /*----About end-----*/
 /*----Services-----*/
-#Services{
-    background-color: var(--bgcolor);
-}
 #Services .row{
     min-height: 100vh;
     align-items: center;
@@ -191,25 +197,26 @@
     color: var(--main);
 }
 #Services .card{
-    background-color: var(--second-text-color);
+    background-color: var(--main);
     border-radius: 10px;
-    color: var(--main);
+    color: var(--second-bg-color);
     overflow: hidden;
     text-align: center; 
 }
-.fas{
+.fa-solid{
     font-size: 3rem;
     padding: 1rem;
+    margin: 8px 0;
     color: var(--text);
 }
 #Services .card:hover{
     transition-duration: .5s;
-    background-color: var(--main);
-    color: var(--bgcolor);
+    background-color: var(--second-text-color);
+    color: var(--main);
 }
 #Services .btn{
     background-color: var(--main);
-    color: var(--second-text-color);
+    color: var(--second-bg-color);
 }
 #Services .btn:hover{
     background-color: var(--second-text-color);
@@ -223,6 +230,11 @@
   @media screen and (max-width: 768px) {
     #Services h1{
       padding: 4rem 0;
+}
+  }
+  @media screen and (max-width: 480px) {
+    #Services .card{
+      margin-bottom: 1rem;
 }
   }
 /*----services end-----*/
@@ -303,7 +315,7 @@
 /*----Services-----*/
 #Portfolio .row{
     min-height: 100vh;
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
 #Portfolio .card-head{
     padding: 10px;
@@ -338,7 +350,7 @@
     top: 0;
     right: -100%;
     position: absolute;
-    background-color: #1d1f2187;
+    background-color: #407c87a2;
     backdrop-filter: blur(5px);
     transition: .7s;
 }
@@ -358,21 +370,27 @@
 /*----Footer-----*/
 #Contact{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     color: var(--main);
     margin: 5rem 0 0 0;
     background-color: var(--main);
     color: var(--second-text-color);
+    min-height: 50vh;
 }
 .qute{
     background-color: var(--second-bg-color);
     color: var(--text);
     border-radius: 25px;
-    margin-bottom: 5rem;
+    margin-top: -28rem;
+    text-align: center;
 }
 .qute h1{
     font-size: 3rem;
     font-weight: bold;
     color: var(--main);
+    margin-bottom: 40px;
 }
 .social-links i{
     margin: 1rem 1.2rem;
@@ -381,10 +399,21 @@
 .credit{
     font-size: 1.2rem;
 }
-#Contact .btn{
+.qutebtn{
     background-color: var(--main);
     color: var(--second-text-color);
     margin-top: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
 }
-
+@media screen and (max-width: 768px) {
+    .qute h1{
+      font-size: 2rem;
+}
+  }
+  .qute{
+    padding: 0 20px;
+}
 /*----footer end-----*/

@@ -9,9 +9,9 @@ function Card() {
             <h1>
               What <span>I Do</span>
             </h1>
-            <div className="col-sm-6 col-lg-4 p-3">
+            <div className="service-box">
               <div className="card">
-                <i className="fas fa-code"></i>
+                <i class="fa-solid fa-code"></i>
                 <div className="card-body">
                   <h2 classsName="card-title"> Lenovo Sales Executive</h2>
                   <p classsName="card-sub-title">
@@ -27,9 +27,9 @@ function Card() {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-lg-4 p-3">
+            <div className="service-box">
               <div className="card">
-                <i className="fas fa-code"></i>
+                <i class="fa-solid fa-user"></i>
                 <div className="card-body">
                   <h2 classsName="card-title">Web Doveloper</h2>
                   <p classsName="card-sub-title">
