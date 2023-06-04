@@ -6,12 +6,7 @@ function Footer() {
         <h1>
           For <span>Contact</span>
         </h1>
-        <div className="social-links">
-          <i className="fa-brands fa-twitter"></i>
-          <i className="fa-brands fa-facebook"></i>
-          <i className="fa-brands fa-instagram"></i>
-          <i className="fa-brands fa-linkedin"></i>
-          <i className="fa-brands fa-github"></i>
+        <div>
           <div className="credit">
             <p>Designed by Rudra tiwari</p>
           </div>

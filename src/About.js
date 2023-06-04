@@ -7,6 +7,13 @@ function About() {
         <div className="row">
           <div className="col-md-6">
             <img src={blob} alt="#"></img>
+            <div className="social-links">
+              <i className="fa-brands fa-twitter"></i>
+              <i className="fa-brands fa-facebook"></i>
+              <i className="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-github"></i>
+            </div>
           </div>
           <div className="about-text col-md-6">
             <h2>About Me</h2>
