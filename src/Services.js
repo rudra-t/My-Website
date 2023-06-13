@@ -29,10 +29,10 @@ function Card() {
               <div className="card">
                 <div className="card-body">
                   <i class="fa-solid fa-code"></i>
-                  <h4> Lenovo Sales Executive</h4>
+                  <h4>Web Desinger or Doveloper</h4>
                   <p>
-                    If you ever need any advice or recommendations on laptops,
-                    feel free to ask. I'm here to assist you.".
+                    Want online presence through website i can help you to
+                    visible online with my services.
                   </p>
                   <a
                     href="https://store.lenovo.com/in/en/marketplace/seller/profile/shop/1658478463"
@@ -45,10 +45,10 @@ function Card() {
               <div className="card">
                 <div className="card-body">
                   <i class="fa-solid fa-code"></i>
-                  <h4> Lenovo Sales Executive</h4>
+                  <h4>Financial Adviser</h4>
                   <p>
-                    If you ever need any advice or recommendations on laptops,
-                    feel free to ask. I'm here to assist you.".
+                    If you want any type of help regarding insurance, stock
+                    market and accounting i can help you.
                   </p>
                   <a
                     href="https://store.lenovo.com/in/en/marketplace/seller/profile/shop/1658478463"
