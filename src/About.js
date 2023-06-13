@@ -28,6 +28,9 @@ function About() {
               satisfaction and strive to build long-lasting relationships with
               clients.
             </p>
+            <a className="btn" href="#file:///D:/My%20Website/src/im/RPT.pdf">
+              Download CV
+            </a>
           </div>
         </div>
       </div>

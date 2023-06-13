@@ -18,13 +18,7 @@ function Card() {
                   <img src={first} />
                 </div>
                 <div className="card-body">
-                  <div className="card-text">
-                    <h5>Lenovo Exclusive Store</h5>
-                    <p>
-                      get any type of servicing related to printer laptop or
-                      computer.
-                    </p>
-                  </div>
+                  <a className="btn">Go Somewhere</a>
                 </div>
               </div>
             </div>
@@ -34,13 +28,7 @@ function Card() {
                   <img src={first} />
                 </div>
                 <div className="card-body">
-                  <div className="card-text">
-                    <h5>Lenovo Exclusive Store</h5>
-                    <p>
-                      get any type of servicing related to printer laptop or
-                      computer.
-                    </p>
-                  </div>
+                  <a className="btn">Go Somewhere</a>
                 </div>
               </div>
             </div>
@@ -50,13 +38,12 @@ function Card() {
                   <img src={first} />
                 </div>
                 <div className="card-body">
-                  <div className="card-text">
-                    <h5>Lenovo Exclusive Store</h5>
-                    <p>
-                      get any type of servicing related to printer laptop or
-                      computer.
-                    </p>
-                  </div>
+                  <a
+                    className="btn"
+                    href="https://clownfish-app-bvsr3.ondigitalocean.app/"
+                  >
+                    Go Somewhere
+                  </a>
                 </div>
               </div>
             </div>
