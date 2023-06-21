@@ -405,6 +405,8 @@ html{
     overflow: hidden;
     position: relative;
     margin-bottom: 3rem;
+    border-color: var(--first-color);
+    object-fit: cover;
 }
 #Portfolio .card-img{
     width: 100%;

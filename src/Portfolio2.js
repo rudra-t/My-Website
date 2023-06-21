@@ -1,5 +1,5 @@
 import React from "react";
-import first from "./im/first.jpg";
+import personal from "./im/personal.svg";
 function Card() {
   return (
     <>
@@ -15,27 +15,22 @@ function Card() {
             <div class="col-lg-4 col-md-6">
               <div className="card">
                 <div className="card-img">
-                  <img src={first} />
+                  <img src={personal} />
                 </div>
                 <div className="card-body">
-                  <a className="btn">Go Somewhere</a>
+                  <a
+                    className="btn"
+                    href="https://clownfish-app-bvsr3.ondigitalocean.app/"
+                  >
+                    Go Somewhere
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
               <div className="card">
                 <div className="card-img">
-                  <img src={first} />
-                </div>
-                <div className="card-body">
-                  <a className="btn">Next Might Be Yours</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div className="card">
-                <div className="card-img">
-                  <img src={first} />
+                  <img src={personal} />
                 </div>
                 <div className="card-body">
                   <a className="btn">Next Might Be Yours</a>
