@@ -32,6 +32,16 @@ function Card() {
                 </div>
               </div>
             </div>
+            <div class="col-lg-4 col-md-6">
+              <div className="card">
+                <div className="card-img">
+                  <img src={first} />
+                </div>
+                <div className="card-body">
+                  <a className="btn">Next Might Be Yours</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

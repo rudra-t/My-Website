@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
       <header id="Home">
-        <div className="container">
+        <div className="container-lg">
           <div className="row">
             <div className="col-md-6">
               <div className="home-text">
@@ -13,12 +13,11 @@ function Home() {
                 </h1>
                 <h2>Hello I m Rudra Tiwari</h2>
                 <p>
-                  A jounier Front End Doveloper and full time Sales executive in
+                  A jounier Front End Doveloper and full time Sales Executive in
                   LENOVO. I have experience with front-end development languages
-                  such as HTML, CSS, and JavaScript.My experience as a
-                  salesperson has given me an understanding of how businesses
-                  operate and how to tailor solutions to meet their specific
-                  needs
+                  such as HTML, CSS, and JavaScript.As a web developer with one
+                  year of experience and a background in sales, helped me to
+                  understand the needs of a coustmer.
                 </p>
                 <a className="btn" href="#Services">
                   My services
