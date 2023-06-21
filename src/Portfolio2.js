@@ -21,6 +21,7 @@ function Card() {
                   <a
                     className="btn"
                     href="https://clownfish-app-bvsr3.ondigitalocean.app/"
+                    target="-blank"
                   >
                     Go Somewhere
                   </a>
