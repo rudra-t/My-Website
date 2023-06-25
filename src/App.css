@@ -11,21 +11,22 @@ html{
     scroll-behavior: smooth;
 }
 :root{
-    --first-color:#3D6453;
-    --second-color:#365949;
-    --third-color: #afe6cc;
+    --first-color:#ff4321;
+    --second-color:#212121;
     --forth-color: #E2EAE9;
-    --title-color:#222523;
+    --title-color:#212121;
     --text-color:#4E544E;
-    --text-color-light:#757C7A;
-    --body-color:#D2D2D2;
+    --body-color:#edf2fc;
     --container-color:#fff;
 }
+body{
+    background-color: var(--body-color);
+}
 /*----Navbar start-----*/
-.navbar-brand{
+.navbar-brand img{
     color: var(--title-color);
-    font-size: 25px;
-    font-weight: 700;
+    max-width: 100px;
+    height: 50px;
 }
 .navbar-brand:hover{
     color: var(--first-color);
@@ -58,6 +59,9 @@ html{
     font-size: 2.8rem;
     color: var(--text-color); 
 }
+.home-text span{
+    color: var(--title-color);
+}
 .home-text h2{
     color: var(--first-color);
     font-size: 3rem;
@@ -67,7 +71,6 @@ html{
 .home-text p{
     color: var(--title-color);
     line-height: 33px;
-    max-width: 500px;
 }
 .home-img {
     display: flex;
@@ -75,7 +78,6 @@ html{
 }
 .home-img img{
     max-width: 80%;
-    padding-top: 5rem;
 }
 #Home .btn{
     background-color: var(--first-color);
@@ -91,26 +93,21 @@ html{
     .home-text{
         margin-top: 5rem;
     }
-    .home-text h2{
+    .home-text h1{
         color: var(--text-color);
-        font-size: 2.7rem;
+        font-size: 3rem;
         margin: 15px 0;
     }
-      .home-text p{
-        margin-right: 0;
-      }
       .home-img img{
         max-width: 100%;
-        padding-top: 5rem;
     }
   }
 @media screen and (max-width: 992px) {
     .home-text{
-        margin: 3rem 0;
+        margin-top: 4rem;
     }
     .home-img img{
         max-width: 80%;
-        padding-top: 3rem;
     }
     .home-text h1{
         font-size: 2rem;
@@ -118,31 +115,21 @@ html{
     .home-text h2 {
         font-size: 1.9rem;
       }
-      .home-text p{
-        line-height: 25px;
-      }
   }
   @media screen and (max-width: 768px) {
-    .home-text{
-        padding-top: 0rem;
-        align-items: center;
-    }
     .home-text h1 {
-      font-size: 3.3rem;
+      font-size: 3rem;
     }
     .home-text h2 {
         font-size: 3rem;
       }
-      .home-text p{
-        margin-right: 0;
-      }
   }
 @media screen and (max-width: 480px) {
     .home-text{
-        margin-top: 0rem;
+        margin-top: 2rem;
     }
     .home-text h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
     .home-text h2 {
         font-size: 2.8rem;
@@ -159,12 +146,15 @@ html{
     justify-content: center;
 }
 .about-text h1{
-    color: var(--first-color);
+    color: var(--title-color);
     font-size: 3rem;
     font-weight: 600;
 }
+.about-text span{
+    color: var(--first-color);
+}
 .about-text h2{
-    color: var(--text-color);
+    color: var(--first-color);
     font-size: 2.2rem;
     margin: 20px 0;
 }
@@ -172,8 +162,12 @@ html{
     color: var(--title-color);
     line-height: 30px;
 }
+.about-image {
+    display: flex;
+    justify-content: center;
+}
 .about-image img{
-    max-width: 80%;
+    max-width: 100%;
     justify-content: center;
 }
 #About .btn{
@@ -187,18 +181,22 @@ html{
         margin-top: 3rem;
     }
     .about-text h1 {
-      font-size: 2.1rem;}
+      font-size: 3rem;
+    }
     .about-text h2 {
         font-size: 2rem;
+      }
+      .about-image img{
+        max-width: 100%;
       }
   }
   @media screen and (max-width: 992px) {
     .about-text h1 {
-      font-size: 1.8rem;
+      font-size: 2.8rem;
       margin: 10px 0;
 }
     .about-text h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
   }
 @media screen and (max-width: 768px) {
@@ -237,12 +235,10 @@ html{
 /*----About end-----*/
 /*----Services-----*/
 #Services{
-    background-color: var(--first-color);
     align-items: center;
-    min-height: 90vh;
 }
 #Services h1{
-    color: var(--container-color);
+    color: var(--first-color);
     text-align: center;
     font-size: 4rem;
     font-weight: bold;
@@ -251,46 +247,49 @@ html{
 #Services span{
     color: var(--main);
 }
-#Services .service-box{
+.service-box{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 5rem;
 }
-#Services .card{
-    background-color: var(--container-color);
-    border-radius: 20px;
-    color: var(--second-bg-color);
-    overflow: hidden;
-    margin: 10px;
-    padding: .5rem;
+.service-card{
+    padding: 1rem;
+    border: 1px solid var(--body-color);
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+    border: solid .5px var(--first-color);
 }
-.fa-solid{
-    font-size: 1.5rem;
-    color: var(--first-color);
+.service-card:hover{
+   transform: scale(.9);
 }
-.card-body h4{
+.coding{
+    max-height: 100px;
+    max-width: 100px;
+}
+.sales{
+    max-height: 122px;
+    max-width: 122px;
+}
+.finance{
+    max-height: 120px;
+    max-width: 120px;
+}
+.service-card h3{
     color: var(--title-color);
+    margin: 20px 0;
 }
 #Services p{
     color: var(--text-color-light);
-}
-#Services a{
-    background-color: var(--first-color);
-    color: var(--container-color);
-    cursor: pointer;
-}
-#Services .btn:hover{
-    color: var(--container-color);
 }
 @media screen and (max-width: 992px) {
     #Services h1{
       padding: 3rem 0;
 }
-#Services .service-box{
+    #Services .service-box{
     gap: 2rem;
+    }
 }
-    
-  }
   @media screen and (max-width: 768px) {
     #Services .service-box{
         margin: 5rem 0;
@@ -298,8 +297,8 @@ html{
     }
     #Services h1{
       padding: 2rem 0;
+    }
 }
-  }
   @media screen and (max-width: 480px) {
     #Services .card{
       margin-bottom: 0rem;
@@ -385,7 +384,6 @@ html{
 #Portfolio .row{
     min-height: 100vh;
     align-items: center;
-
 }
 #Portfolio .card-head{
     padding: 10px;
@@ -405,16 +403,12 @@ html{
     overflow: hidden;
     position: relative;
     margin-bottom: 3rem;
-    border-color: var(--first-color);
+    background-color: var(--body-color);
     object-fit: cover;
 }
-#Portfolio .card-img{
-    width: 100%;
-    height: 100%;
-}
 #Portfolio .card-img img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -454,15 +448,16 @@ html{
     }
 }
 @media screen and (max-width: 768px) {
-    .service-box{
-        flex-basis: 50%;
-    }
     #Portfolio .title{
         text-align: center;
+        margin-bottom: 4rem;
     }
     #Portfolio .subtitle{
         text-align: center;
     }
+  }
+  @media screen and (max-width: 480px){
+
   }
 /*----services end-----*/
 /*----Footer-----*/
@@ -483,6 +478,8 @@ html{
     border-radius: 25px;
     margin-top: -28rem;
     text-align: center;
+    margin-left: 12rem;
+    margin-right: 12rem;
 }
 .qute h1{
     font-size: 3.5rem;
@@ -503,9 +500,19 @@ html{
     border-radius: 5px;
     padding: 8px;
 }
+.qutebtn:hover{
+    border: 1px var(--first-color) solid;
+    background-color: var(--body-color);
+    color: var(--first-color);
+}
 .social-links i{
     margin: 0 3rem;
     font-size: 2rem;
+    transition: 1s;
+    color: var(--container-color);
+}
+.social-links i:hover{
+    transform: scale(1.5);
 }
 @media screen and (max-width: 992px) {
     .qute h1{
@@ -515,35 +522,58 @@ html{
 }
 @media screen and (max-width: 768px) {
     .qute{
+        margin-left:5rem;
         margin-top: -27rem;
-    }
+        margin-right: 5rem;}
     .qute h1{
-        font-size: 1.5rem;
+        font-size: 2.3rem;
   }
-  .social-links i{
-    margin: 0 2rem;
-    font-size: 1.9rem;
-}
-}
-.qute{
-    margin-left:7rem;
-    margin-right: 7rem;
+    .social-links i{
+    margin: 0 2.5rem;
+    font-size: 2.3rem;
+    }
+    .qute{
+    margin-left:5rem;
+    margin-top: -27rem;
+    margin-right: 5rem;
+    }
 }
 @media screen and (max-width: 480px) {
+    #Contact{
+        min-height: 35vh;
+    }
     .qute{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: -25rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: -20rem;
   }
   .qute h1{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
   .qute{
     padding: 0 20px;
 }
 .social-links i{
-    margin: 0 1.5rem;
-    font-size: 1.3rem;
+    margin: 0 1.3rem;
+    font-size: 2rem;
 }
+.credit{
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+}
+@media screen and (max-width: 395px) {
+    .qute h1{
+        font-size: 1.6rem;
+    }
+    .qute{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: -21rem;
+      }
+      .qutebtn{
+        padding: 8px;
+        font-size: 14px;
+    }
 }
 /*----footer end-----*/

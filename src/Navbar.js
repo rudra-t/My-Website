@@ -1,11 +1,12 @@
 import React from "react";
+import brand3 from "./im/brand3.png";
 function Navbar() {
   return (
     <>
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <a className="navbar-brand" href="#">
-            Rudra
+            <img src={brand3} alt="brandname" />
           </a>
           <button
             className="navbar-toggler"

@@ -1,5 +1,6 @@
 import React from "react";
-import personal from "./im/personal.svg";
+import portfolio1 from "./im/portfolio1.svg";
+import portfolio2 from "./im/portfolio2.svg";
 function Card() {
   return (
     <>
@@ -15,7 +16,7 @@ function Card() {
             <div class="col-lg-4 col-md-6">
               <div className="card">
                 <div className="card-img">
-                  <img src={personal} />
+                  <img src={portfolio1} />
                 </div>
                 <div className="card-body">
                   <a
@@ -31,7 +32,7 @@ function Card() {
             <div class="col-lg-4 col-md-6">
               <div className="card">
                 <div className="card-img">
-                  <img src={personal} />
+                  <img src={portfolio2} />
                 </div>
                 <div className="card-body">
                   <a className="btn">Next Might Be Yours</a>

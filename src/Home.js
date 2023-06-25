@@ -8,10 +8,10 @@ function Home() {
           <div className="row">
             <div className="col-md-6">
               <div className="home-text">
-                <h1>
-                  <span>Hare Krishna</span>
-                </h1>
-                <h2>Hello I m Rudra Tiwari</h2>
+                <h1>Hare Krishna</h1>
+                <h2>
+                  I m Rudra<span> Tiwari</span>
+                </h2>
                 <p>
                   A jounier Front End Doveloper and full time Sales Executive in
                   LENOVO. I have experience with front-end development languages

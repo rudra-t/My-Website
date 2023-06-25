@@ -6,13 +6,12 @@ function About() {
     <section id="About">
       <div className="container-lg">
         <div className="row">
-          <div className="col-md-6 about-image">
-            <img src={about} alt="#"></img>
-          </div>
           <div className="about-text col-md-6">
             <h2>About Me</h2>
-            <h1>Turning Vision Into Reality </h1>
-            <h2>Web doveloper from India</h2>
+            <h1>
+              Web doveloper from <br />
+              <span>INDIA</span>
+            </h1>
             <p>
               I have done my Bachelor's degree in the field of Commerce with
               experience of 1-2 years as a computer operator, sales executive,
@@ -22,6 +21,9 @@ function About() {
             <a className="btn" target="_blank" href={PDF}>
               Download CV
             </a>
+          </div>
+          <div className="col-md-6 about-image order-md-first">
+            <img src={about} alt="#"></img>
           </div>
         </div>
       </div>

@@ -1,5 +1,7 @@
 import React from "react";
-import first from "./im/first.jpg";
+import coding from "./im/coding.svg";
+import sales from "./im/sales.svg";
+import finance from "./im/finance.svg";
 function Card() {
   return (
     <>
@@ -9,53 +11,35 @@ function Card() {
             What <span>I Am</span>
           </h1>
           <div className="service-box">
-            <div className="card">
+            <div className="service-card">
               <div className="card-body">
-                <i class="fa-solid fa-user"></i>
+                <img src={sales} className="sales"></img>
               </div>
-              <h4>Sales Executive</h4>
+              <h3>Sales Executive</h3>
               <p>
                 If you ever want to buy any type of laptop, feel free to ask.
                 I'm here to assist you.".
               </p>
-              <a
-                href="https://store.lenovo.com/in/en/marketplace/seller/profile/shop/1658478463"
-                className="btn"
-              >
-                Website
-              </a>
             </div>
-            <div className="card">
+            <div className="service-card">
               <div className="card-body">
-                <i class="fa-solid fa-code"></i>
+                <img src={coding} className="coding"></img>
               </div>
-              <h4>Front-end Doveloper</h4>
+              <h3>Front-end Doveloper</h3>
               <p>
                 Want online presence through website i can help you to visible
                 online with my services.
               </p>
-              <a
-                href="https://store.lenovo.com/in/en/marketplace/seller/profile/shop/1658478463"
-                className="btn"
-              >
-                Website
-              </a>
             </div>
-            <div className="card">
+            <div className="service-card">
               <div className="card-body">
-                <i class="fa-solid fa-coins"></i>
+                <img src={finance} className="finance"></img>
               </div>
-              <h4>Financial Adviser</h4>
+              <h3>LIC Agent</h3>
               <p>
-                If you want any type of help regarding insurance, stock market
-                and accounting i can help you.
+                If you want any type of help regarding insurance, i can help
+                you.
               </p>
-              <a
-                href="https://store.lenovo.com/in/en/marketplace/seller/profile/shop/1658478463"
-                className="btn"
-              >
-                Account
-              </a>
             </div>
           </div>
         </div>
