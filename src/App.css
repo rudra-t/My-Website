@@ -77,7 +77,8 @@ body{
     justify-content: center;
 }
 .home-img img{
-    max-width: 70%;
+    max-width: 100%;
+    padding-top: 5rem;
 }
 #Home .btn{
     background-color: var(--first-color);
@@ -107,7 +108,7 @@ body{
         margin-top: 4rem;
     }
     .home-img img{
-        max-width: 80%;
+        max-width: 100%;
     }
     .home-text h1{
         font-size: 2rem;
@@ -117,6 +118,9 @@ body{
       }
   }
   @media screen and (max-width: 768px) {
+    .home-text{
+        margin-top: 1rem;
+    }
     .home-text h1 {
       font-size: 3rem;
     }
@@ -125,9 +129,6 @@ body{
       }
   }
 @media screen and (max-width: 480px) {
-    .home-text{
-        margin-top: 2rem;
-    }
     .home-text h1 {
       font-size: 2.5rem;
     }
@@ -258,10 +259,10 @@ body{
     flex-direction: column;
     transition: .5s;
     border-radius: 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 .service-card:hover{
    transform: scale(1.1);
-   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 .coding{
     max-height: 100px;
@@ -300,8 +301,8 @@ body{
     }
 }
   @media screen and (max-width: 480px) {
-    #Services .card{
-      margin-bottom: 0rem;
+    .service-card{
+      margin: 1rem;
 }
 #Services .service-box{
     
