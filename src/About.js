@@ -7,7 +7,7 @@ function About() {
       <div className="container-lg">
         <div className="row">
           <div className="about-text col-md-6">
-            <h2>About Me</h2>
+            <h2>Hare Krishna</h2>
             <h1>
               Web doveloper from <br />
               <span>INDIA</span>

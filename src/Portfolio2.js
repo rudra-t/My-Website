@@ -19,11 +19,7 @@ function Card() {
                   <img src={portfolio1} />
                 </div>
                 <div className="card-body">
-                  <a
-                    className="btn"
-                    href="https://clownfish-app-bvsr3.ondigitalocean.app/"
-                    target="-blank"
-                  >
+                  <a className="btn" href="#" target="-blank">
                     Go Somewhere
                   </a>
                 </div>
