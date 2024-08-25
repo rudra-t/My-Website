@@ -5,27 +5,22 @@
     list-style: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Dosis', sans-serif;
 }
 html{
-    --background-color:#1A1A24;
-    --second-background-color:#292836;
+    --background-color:#fff;
+    --second-background-color:#e8e8e8;
     --sec-bg-color: #EBD18D;
-    --text-color: #F4F4F4;
-    --second-text-color:#1A1A24;
+    --text-color: #000;
+    --second-text-color:#ff725e;
 }
 body{
     background-color: var(--background-color);
 }
 /*------------------------------------------navbar start---------------------------------------*/
 nav{
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1000;
     height: 10vh;
     width: 100%;
-    padding: 0 10%;
+    padding: 0 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,25 +84,21 @@ nav{
 /*------------------------------------------navbar end---------------------------------------*/
 /*------------------------------------------header start---------------------------------------*/
 .hero-row{
-    margin: 0 10%;
+    margin: 0 5%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     min-height: 100vh;
-    align-items: center;
+}
+.header1{
+    max-width: 550px;
 }
 .header1 h1{
-    font-size: 2.5rem;
-    color: var(--sec-bg-color);
-    letter-spacing: 2px;
-}
-.header1 span{
-    font-size: 6rem;
-    color: var(--sec-bg-color);
-    margin-bottom: 10px;
+    font-size: 3.2rem;
+    color: var(--text-color);
     letter-spacing: 2px;
 }
 .header1 h3{
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--text-color);
     letter-spacing: 2px;
     padding-bottom: 50px;
@@ -121,69 +112,41 @@ nav{
 .header2{
     display: flex;
     justify-content: center;
+    align-items: center;
+    max-width: 600px;
 }
 .header2 img{
-    width: 70%;
+    width: 100%;
+    height: 100%;
 }
 @media screen and (max-width: 992px) {
-    .header1 h3{
-        font-size: 3rem;
-    }
-    .header1 span{
-        font-size: 3.8rem;
-    }
+    
 }
 @media screen and (max-width: 768px) {
-    .hero-row{
-        margin: 2rem 10%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        text-align: center;
-    }
-    .header1{
-        margin: 3rem 0;
-    }
-    .header1 span{
-        font-size: 6rem;
-    }
-    .header1 h3{
-        font-size: 3.8rem;
-        margin: 10px 0;
-    }
+   .hero-row{
+    grid-template-columns: repeat(1, 1fr);
+   }
 }
 @media screen and (max-width: 480px) {
-    .hero-row{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .header1 h1{
-        font-size: 3rem;
-    }
-    .header1 span{
-        font-size: 4.2rem;
-    }
-    .header1 h3{
-        font-size: 2.5rem;
-        margin: 10px 0;
-    }
-    .header2 img{
-        width: 100%;
-        margin: 2rem 0;
-    }
+    
 }
 /*------------------------------------------header end---------------------------------------*/
 /*------------------------------------------about start---------------------------------------*/
 #about{
-    background-color: var(--second-background-color);
+
 }
 .about-row{
-    margin: 0 10%;
+    margin: 0 5%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     min-height: 100vh;
     align-items: center;
     gap: 2rem;
 }
+.about1{
+    max-width: 550px;
+}
+
 .about1 h1{
     font-size: 2.9rem;
     color: var(--text-color);
@@ -191,7 +154,7 @@ nav{
 .about1 h3{
     font-size: 3.8rem;
     margin: 20px 0;
-    color: var(--sec-bg-color);
+    color: var(--text-color);
     letter-spacing: 2px;
 }
 .about1 p{
@@ -201,6 +164,9 @@ nav{
 }
 .about2{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
 }
 .about-btn{
     padding: .7rem 2rem;
@@ -214,7 +180,8 @@ nav{
     border: 2px solid var(--background-color);
 }
 .about2 img{
-    width: 70%;
+    width: 100%;
+    height: 100%;
 }
 @media screen and (max-width: 992px) {
     .about1 h1{
@@ -226,7 +193,7 @@ nav{
 }
 @media screen and (max-width: 768px) {
     .about-row{
-        margin: 0 10%;
+        margin: 0 5%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
@@ -263,7 +230,7 @@ nav{
     min-height: 100vh;
 }
 .serviceheading{
-    color: var(--sec-bg-color);
+    color: var(--text-color);
     text-align: center;
     font-size: 3.5rem;
     padding-top: 6rem;
@@ -296,22 +263,6 @@ nav{
 .service1 p{
     max-width: 90%;
 }
-.servicelink{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: var(--text-color);
-    position: absolute;
-    right: 0;
-    top: 75%;
-}
-.servicelink i{
-    font-size: 250%;
-    position: absolute;
-    top: 22%;
-    left: 25%;
-    color: var(--second-background-color);
-}
 .service-img{
     width: 80px;
     height: 80px;
@@ -328,7 +279,7 @@ nav{
 }
 .portfolioheading{
     text-align: center;
-    color: var(--sec-bg-color);
+    color: var(--text-color);
     font-size: 55px;
     letter-spacing: 3px;
     margin: 30px 0;
@@ -366,8 +317,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    width: 80%;
-    margin: 0 auto;
+    margin: 0 5%;
 }
 .contact form{
     display: flex;
@@ -385,9 +335,8 @@ nav{
     width: 100%;
     height: 40px;
     margin: 10px 0;
-    border: none;
+    border: 1px solid var(--second-text-color);
     outline: none;
-    background-color: var(--second-background-color);
     border-radius: 5px;
     padding: 5px 10px;
 }
@@ -396,14 +345,14 @@ nav{
     border-radius: 5px;
     width: 100%;
     margin: 10px 0;
-    border: none;
+    border: 1px solid var(--second-text-color);
     outline: none;
-    background-color: var(--second-background-color);
 }
 .sendbtn{
     color: var(--text-color);
     text-transform: uppercase;
     font-size: 1rem;
+    border: 1px solid var(--second-text-color);
 }
 .contact2{
     display: flex;
@@ -414,7 +363,7 @@ nav{
 .footer i{
     font-size: 3rem;
     margin: 20px;
-    color: var(--text-color);
+    color: var(--second-text-color);
     transition: 1S;
 }
 .footer i:hover{
